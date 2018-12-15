@@ -1,19 +1,27 @@
 <header>
-  <div class="menu-btn">
-    <div class="menu-line"></div>
-    <div class="menu-line"></div>
-    <div class="menu-line"></div>
+  <div class="menu-btn" (click)="toggleMenu()" [class.close]="toggle">
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
   </div>
 
-  <nav>
-    <div class="men-branding">
+  <nav class="menu" [class.show]="toggle">
+    <div class="menu-branding" [class.show]="toggle">
       <div class="portrait"></div>
     </div>
-    <ul class="menu-nav">
-      <li class="nav-item"><a href="/">Home</a></li>
-      <li class="nav-item"><a routerLink="/about">About</a></li>
-      <li class="nav-item"><a routerLink="/my-works">My Work</a></li>
-      <li class="nav-item"><a routerLink="/contact">Contact</a></li>
+    <ul class="menu-nav" [class.show]="toggle">
+      <li class="nav-item" [class.show]="toggle">
+        <a routerLink="/" (click)="toggleMenu(250)">Home</a>
+      </li>
+      <li class="nav-item" [class.show]="toggle">
+        <a routerLink="/about" (click)="toggleMenu(250)">About</a>
+      </li>
+      <li class="nav-item" [class.show]="toggle">
+        <a routerLink="/my-works" (click)="toggleMenu(250)">My Work</a>
+      </li>
+      <li class="nav-item" [class.show]="toggle">
+        <a routerLink="/contact" (click)="toggleMenu(250)">Contact</a>
+      </li>
     </ul>
   </nav>
 </header>

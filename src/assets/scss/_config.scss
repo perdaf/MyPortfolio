@@ -1,2 +1,20 @@
 $primary-color: #444;
-$secondary-color : #fff;
+$secondary-color : rgb(252, 166, 69);
+$show-home-image: true;
+$bg-image: url(./assets/img/bg-home.jpg);
+$bg-opacity: 0.9;
+
+
+@mixin easeOut {
+  transition: all 0.3s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    background:
+      linear-gradient(rgba($primary-color, 0.8),
+      rgba($primary-color, 0.8)), $bg-image;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
