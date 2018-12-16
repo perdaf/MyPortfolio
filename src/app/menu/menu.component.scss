@@ -43,7 +43,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -60,28 +59,84 @@
     width: 50%;
     height: 100vh;
     overflow: hidden;
+    // opacity: 0.9;
   }
 
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: rgba(darken($primary-color, 5), 0.7);
     list-style: none;
     transform: translate3d(0, -100%, 0);
 
     @include easeOut();
 
     &.show {
-      transform: translate3d(0, 0, 0)
+      transform: translate3d(0, 0, 0);
     }
+
+    .nav-item {
+      transform: translate3d(600px, 0, 0);
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+        @include easeOut();
+      }
+
+      a {
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 1rem 0;
+
+        &:hover {
+          color: $secondary-color;
+          @include easeOut();
+        }
+      }
+
+      .active-link {
+        color: $secondary-color;
+        font-weight: 500;
+      }
+    }
+
+    //delay nav-item
+    @for $x from 1 through 4 {
+      .nav-item:nth-child(#{$x}) {
+        transition-delay: $x * 0.1s;
+      }
+    }
+
   }
 
   &-branding {
-    background: $primary-color;
+    background: rgba($primary-color, 0.7);
     transform: translate3d(0, 100%, 0);
+    @include easeOut();
 
     &.show {
       transform: translate3d(0, 0, 0);
     }
+
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background: url(../../assets/img/IMG_20181018_162614.jpg) no-repeat;
+      background-size: cover;
+      background-position: -10px -70px;
+      border-radius: 50%;
+      border: 2px solid $secondary-color;
+      transform: translate3d(-600px, 0, 0);
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+        @include easeOut();
+      }
+    }
+
+    .portrait:first-child {
+      transition-delay: 0.5s;
+    }
   }
+
 }

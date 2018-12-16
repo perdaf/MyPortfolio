@@ -7,20 +7,11 @@
 
   <nav class="menu" [class.show]="toggle">
     <div class="menu-branding" [class.show]="toggle">
-      <div class="portrait"></div>
+      <div class="portrait" [class.show]="toggle"></div>
     </div>
     <ul class="menu-nav" [class.show]="toggle">
-      <li class="nav-item" [class.show]="toggle">
-        <a routerLink="/" (click)="toggleMenu(250)">Home</a>
-      </li>
-      <li class="nav-item" [class.show]="toggle">
-        <a routerLink="/about" (click)="toggleMenu(250)">About</a>
-      </li>
-      <li class="nav-item" [class.show]="toggle">
-        <a routerLink="/my-works" (click)="toggleMenu(250)">My Work</a>
-      </li>
-      <li class="nav-item" [class.show]="toggle">
-        <a routerLink="/contact" (click)="toggleMenu(250)">Contact</a>
+      <li *ngFor="let menu of menus" class="nav-item" [class.show]="toggle">
+        <a [routerLink]="menu.url" (click)="toggleMenu(250)" routerLinkActive="active-link">{{ menu.name }}</a>
       </li>
     </ul>
   </nav>

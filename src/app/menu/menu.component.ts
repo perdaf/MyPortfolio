@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
     public toggle: Boolean = false;
 
+    public menus = [
+        { name: 'home', url: '/home' },
+        { name: 'about me', url: '/about' },
+        { name: 'my works', url: '/myWorks' },
+        { name: 'contact', url: '/contact' },
+    ];
+
     constructor() {}
 
     ngOnInit() {}
