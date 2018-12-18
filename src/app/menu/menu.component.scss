@@ -8,6 +8,11 @@
   cursor: pointer;
   @include easeOut();
 
+  &:hover>.btn-line {
+    background: $secondary-color;
+    box-shadow: 1px 1px 2px rgba(#000, 0.5);
+  }
+
   .btn-line {
     width: 28px;
     height: 3px;
@@ -59,7 +64,6 @@
     width: 50%;
     height: 100vh;
     overflow: hidden;
-    // opacity: 0.9;
   }
 
   &-nav {
@@ -77,19 +81,24 @@
 
     .nav-item {
       transform: translate3d(600px, 0, 0);
+      width: 100%;
+      text-align: center;
 
       &.show {
         transform: translate3d(0, 0, 0);
         @include easeOut();
       }
 
-      a {
+      .nav-link {
+        display: inline-block;
         font-size: 2rem;
         text-transform: uppercase;
-        padding: 1rem 0;
+        width: 100%;
 
         &:hover {
           color: $secondary-color;
+          text-shadow: 2px 2px 3px rgba(#000, 0.6);
+          background: rgba(#fff, 0.2);
           @include easeOut();
         }
       }
@@ -136,6 +145,43 @@
 
     .portrait:first-child {
       transition-delay: 0.5s;
+    }
+  }
+
+}
+
+@include mediaMd {
+  .menu {
+
+    align-items: center;
+    text-align: center;
+
+    &-branding,
+    &-nav {
+      float: none;
+      width: 100%;
+
+      &.show {
+        transform: translate3d(0, 0, 0)
+      }
+    }
+
+    &-branding {
+      height: 25vh;
+      transform: translate3d(-100%, 0, 0);
+      @include easeOut();
+    }
+
+    &-nav {
+      height: 75vh;
+      transform: translate3d(100%, 0, 0);
+      @include easeOut();
+    }
+
+    .portrait {
+      width: 150px;
+      height: 150px;
+      background-position: -10px -40px;
     }
   }
 

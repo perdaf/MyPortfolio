@@ -14,6 +14,21 @@ body {
   line-height: 1.5;
 }
 
+main {
+  min-height: 94vh;
+  padding: 10px 25px 0;
+  overflow: hidden;
+}
+
+footer {
+  margin-top: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5vh;
+  background: darken($primary-color, 1);
+}
+
 h1,
 h2,
 h3 {
@@ -28,6 +43,7 @@ h3 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background-color: rgba(lighten($primary-color, 3), 0.5);
+    border-bottom: rgba(#fff, 0.2) 1px solid;
   }
 }
 

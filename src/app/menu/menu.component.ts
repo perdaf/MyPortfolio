@@ -11,7 +11,8 @@ export class MenuComponent implements OnInit {
     public menus = [
         { name: 'home', url: '/home' },
         { name: 'about me', url: '/about' },
-        { name: 'my works', url: '/myWorks' },
+        { name: 'my work', url: '/myWorks' },
+        { name: 'my blog', url: '/blog' },
         { name: 'contact', url: '/contact' },
     ];
 

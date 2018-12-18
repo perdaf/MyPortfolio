@@ -11,7 +11,8 @@
     </div>
     <ul class="menu-nav" [class.show]="toggle">
       <li *ngFor="let menu of menus" class="nav-item" [class.show]="toggle">
-        <a [routerLink]="menu.url" (click)="toggleMenu(250)" routerLinkActive="active-link">{{ menu.name }}</a>
+        <a [routerLink]="menu.url" (click)="toggleMenu(250)" routerLinkActive="active-link" class="nav-link">{{
+          menu.name }}</a>
       </li>
     </ul>
   </nav>
