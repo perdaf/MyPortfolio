@@ -6,7 +6,7 @@
     <div class="btn btn-light">
       {{workItem.name}}
     </div>
-    <a href="!#" class="btn btn-dark">
+    <a href="!#" class="btn btn-dark" *ngIf="workItem.gitUrl">
       <i class="fab fa-github"> github</i>
     </a>
   </div>

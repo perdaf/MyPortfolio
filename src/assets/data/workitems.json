@@ -3,14 +3,14 @@
     "imgUrl": "../../assets/img/bottle juice.jpg",
     "categorie": "3d",
     "url": "www.work1.com",
-    "gitUrl": "www.git-work1.com"
+    "gitUrl": "gdfgd"
   },
   {
     "name": "coiffeuse project",
     "imgUrl": "../../assets/img/comp001.jpg",
     "categorie": "3d",
     "url": "www.work1.com",
-    "gitUrl": "www.git-work1.com"
+    "gitUrl": ""
   },
   {
     "name": "Baya tropical",
@@ -20,38 +20,10 @@
     "gitUrl": "www.git-work1.com"
   },
   {
-    "name": "Baya tropical",
-    "imgUrl": "../../assets/img/design_baya_tropical.png",
-    "categorie": "dev - web Design",
+    "name": "don't Cross",
+    "imgUrl": "../../assets/img/dont cross.jpg",
+    "categorie": "2d - illustration",
     "url": "www.work1.com",
-    "gitUrl": "www.git-work1.com"
-  },
-  {
-    "name": "Baya tropical",
-    "imgUrl": "../../assets/img/design_baya_tropical.png",
-    "categorie": "dev - web Design",
-    "url": "www.work1.com",
-    "gitUrl": "www.git-work1.com"
-  },
-  {
-    "name": "Baya tropical",
-    "imgUrl": "../../assets/img/design_baya_tropical.png",
-    "categorie": "dev - web Design",
-    "url": "www.work1.com",
-    "gitUrl": "www.git-work1.com"
-  },
-  {
-    "name": "Baya tropical",
-    "imgUrl": "../../assets/img/design_baya_tropical.png",
-    "categorie": "dev - web Design",
-    "url": "www.work1.com",
-    "gitUrl": "www.git-work1.com"
-  },
-  {
-    "name": "Baya tropical",
-    "imgUrl": "../../assets/img/design_baya_tropical.png",
-    "categorie": "dev - web Design",
-    "url": "www.work1.com",
-    "gitUrl": "www.git-work1.com"
+    "gitUrl": ""
   }
 ]

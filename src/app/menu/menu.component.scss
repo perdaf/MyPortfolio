@@ -150,6 +150,20 @@
 
 }
 
+@include mediaSm {
+  .menu {
+    height: 100%;
+
+    &-nav {
+      min-height: 100vh;
+    }
+
+    &-branding {
+      display: none;
+    }
+  }
+}
+
 @include mediaMd {
   .menu {
 

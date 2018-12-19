@@ -1,5 +1,9 @@
 @import '../../assets/scss/config';
 
+.content {
+  padding-top: 1rem;
+}
+
 .bio {
 
   display: flex;
@@ -62,6 +66,17 @@
 }
 
 @include mediaSm {
+  .bio {
+    flex-flow: column wrap;
+    align-items: center;
+
+    .resume {
+      width: 100%;
+      padding: 0;
+      margin: 1rem 0;
+    }
+  }
+
   .exper-item {
     flex: 1 1 100%;
   }

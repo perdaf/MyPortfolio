@@ -1,17 +1,20 @@
-<h1 class="lg-heading">About <span class="text-secondary">me</span></h1>
-<h2 class="sm-heading">Parlons un peu de moi...</h2>
+<div class="content">
+  <h1 class="lg-heading">About <span class="text-secondary">me</span></h1>
+  <h2 class="sm-heading">Parlons un peu de moi...</h2>
 
-<div class="bio">
-  <img src="../../assets/img/IMG_20181018_162614.jpg" alt="moi">
-  <div class="resume">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus odit cumque debitis, similique error repellat
-    nulla itaque corporis maxime architecto?
+  <div class="bio">
+    <img src="../../assets/img/IMG_20181018_162614.jpg" alt="moi">
+    <div class="resume">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus odit cumque debitis, similique error
+      repellat
+      nulla itaque corporis maxime architecto?
+    </div>
   </div>
-</div>
-<h2 class="sm-heading">Quelques expériences professionnelles</h2>
-<div class="exper">
-  <div class="exper-item" *ngFor="let exp of expers">
-    <div class="exper-title">{{exp.workAt}}</div>
-    <div class="exper-resume">{{exp.resume}}</div>
+  <h2 class="sm-heading">Quelques expériences professionnelles</h2>
+  <div class="exper">
+    <div class="exper-item" *ngFor="let exp of expers">
+      <div class="exper-title">{{exp.workAt}}</div>
+      <div class="exper-resume">{{exp.resume}}</div>
+    </div>
   </div>
 </div>
