@@ -1,58 +1,50 @@
-import { Injectable, ErrorHandler } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { catchError } from 'rxjs/operators';
 
-import axios from 'axios';
-import { AxiosInstance } from 'axios';
-
-export interface Params {
-    [key: string]: any;
-}
-export interface GetOptions {
-    url: string;
-    params?: Params;
-}
-
-export interface ErrorResponse {
-    id: string;
-    code: string;
-    message: string;
-}
+import { Menus } from '../../interfaces/menu';
+import { Expers } from '../../interfaces/expers';
+import { WorkItems } from '../../interfaces/work-items';
 
 @Injectable({
     providedIn: 'root',
 })
 export class ApidataService {
-    private axiosClient: AxiosInstance;
+    // private axiosClient: AxiosInstance;
 
-    constructor(private errorHandler: ErrorHandler) {
-        this.axiosClient = axios.create({
-            timeout: 3000,
-            headers: {
-                'X-Initialized-At': Date.now().toString(),
-            },
-        });
+    constructor(private http: HttpClient) {}
+
+    public getMenu(): Observable<HttpResponse<Menus[]>> {
+        return this.http
+            .get<Menus[]>('../../assets/data/menu.json')
+            .pipe(catchError(this.handleError));
     }
 
-    // public methode
-    public async get<T>(options: GetOptions): Promise<T> {
-        try {
-            const axiosResponse = await this.axiosClient.request<T>({
-                method: 'get',
-                url: options.url,
-                params: options.params,
-            });
-            return axiosResponse.data;
-        } catch (error) {
-            return Promise.reject(this.normalizeError(error));
+    public getExpers(): Observable<HttpResponse<Expers[]>> {
+        return this.http
+            .get<Expers[]>('../../assets/data/exper.json')
+            .pipe(catchError(this.handleError));
+    }
+
+    public getWorks(): Observable<HttpResponse<WorkItems[]>> {
+        return this.http
+            .get<WorkItems[]>('../../assets/data/workitems.json')
+            .pipe(catchError(this.handleError));
+    }
+
+    private handleError(error: HttpErrorResponse) {
+        if (error.error instanceof ErrorEvent) {
+            // A client-side or network error occurred. Handle it accordingly.
+            console.error('An error occurred:', error.error.message);
+        } else {
+            // The backend returned an unsuccessful response code.
+            // The response body may contain clues as to what went wrong,
+            console.error(
+                `Backend returned code ${error.status}, ` +
+                    `body was: ${error.error}`
+            );
         }
-    }
-
-    // private methode
-    private normalizeError(error: any): ErrorResponse {
-        this.errorHandler.handleError(error);
-        return {
-            id: '-1',
-            code: 'UnknowError',
-            message: 'An unexpectied error occured',
-        };
+        // return an observable with a user-facing error message
+        return throwError('Something bad happened; please try again later.');
     }
 }

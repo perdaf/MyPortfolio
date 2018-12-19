@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { Page404Component } from './page404/page404.component';
 
 const routes: Routes = [
+    { path: '', pathMatch: 'full', redirectTo: '/home' },
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'myWorks', component: MyWorksComponent },

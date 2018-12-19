@@ -1,13 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApidataService } from '../services/api/apidata.service';
 
-interface WorkItems {
-    name: string;
-    imgUrl: string;
-    categorie: string;
-    url: string;
-    gitUrl: string;
-}
+import { WorkItems } from '../interfaces/work-items';
 
 @Component({
     selector: 'app-my-works',
@@ -17,22 +11,19 @@ interface WorkItems {
 export class MyWorksComponent implements OnInit {
     public workItems: WorkItems[];
 
-    constructor(private apiClient: ApidataService) {
-        document.cookie = 'XSRF-TOKEN=server-generated-token';
-    }
+    constructor(private apiClient: ApidataService) {}
 
     ngOnInit() {
         this.loadWork();
     }
 
-    // appel du service apidataservice pour utiliser axios
-    public async loadWork(): Promise<void> {
-        try {
-            this.workItems = await this.apiClient.get<WorkItems[]>({
-                url: '../../assets/data/workitems.json',
-            });
-        } catch (error) {
-            console.error(error);
-        }
+    // appel du service apidataservice
+    public async loadWork() {
+        this.apiClient
+            .getWorks()
+            .subscribe(
+                (data: WorkItems[]) => (this.workItems = data),
+                error => console.error(error)
+            );
     }
 }
