@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { ApidataService } from '../services/api/apidata.service';
+
+interface Menus {
+    name: string;
+    url: string;
+}
 
 @Component({
     selector: 'app-menu',
@@ -6,19 +12,27 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
-    public toggle: Boolean = false;
+    public toggle = false;
+    public menus: Menus[];
 
-    public menus = [
-        { name: 'home', url: '/home' },
-        { name: 'about me', url: '/about' },
-        { name: 'my work', url: '/myWorks' },
-        { name: 'my blog', url: '/blog' },
-        { name: 'contact', url: '/contact' },
-    ];
+    constructor(private apiClient: ApidataService) {
+        document.cookie = 'XSRF-TOKEN=server-generated-token';
+    }
 
-    constructor() {}
+    ngOnInit() {
+        this.loadMenu();
+    }
 
-    ngOnInit() {}
+    // appel du service apidataservice pour utiliser axios
+    public async loadMenu(): Promise<void> {
+        try {
+            this.menus = await this.apiClient.get<Menus[]>({
+                url: '../../assets/data/menu.json',
+            });
+        } catch (error) {
+            console.error(error);
+        }
+    }
 
     toggleMenu(delai: number) {
         setTimeout(() => {

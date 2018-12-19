@@ -11,22 +11,21 @@ import { ContactComponent } from './contact/contact.component';
 import { Page404Component } from './page404/page404.component';
 import { WorkitemComponent } from './my-works/workitem/workitem.component';
 
+import { ApidataService } from './services/api/apidata.service';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    MenuComponent,
-    HomeComponent,
-    AboutComponent,
-    MyWorksComponent,
-    ContactComponent,
-    Page404Component,
-    WorkitemComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        MenuComponent,
+        HomeComponent,
+        AboutComponent,
+        MyWorksComponent,
+        ContactComponent,
+        Page404Component,
+        WorkitemComponent,
+    ],
+    imports: [BrowserModule, AppRoutingModule],
+    providers: [ApidataService],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

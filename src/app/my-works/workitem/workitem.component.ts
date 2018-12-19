@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
     styleUrls: ['./workitem.component.scss'],
 })
 export class WorkitemComponent implements OnInit {
-    @Input() workItems: Object;
+    @Input() workItems: object;
 
     constructor() {}
 

@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { ApidataService } from '../services/api/apidata.service';
+
+interface Expers {
+    workat: string;
+    resume: string;
+}
 
 @Component({
     selector: 'app-about',
@@ -6,21 +12,24 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
-    public expers: Object[] = [
-        {
-            workAt: 'webForce3',
-            resume: 'Lorem ipsum dolor sit amet consectetur, ',
-        },
-        {
-            workAt: 'pileMedia',
-            resume: 'Lorem ipsum dolor sit amet consectetur, ',
-        },
-        {
-            workAt: 'Entrepreneur',
-            resume: 'Lorem ipsum dolor sit amet consectetur, ',
-        },
-    ];
-    constructor() {}
+    public expers: Expers[];
 
-    ngOnInit() {}
+    constructor(private apiClient: ApidataService) {
+        document.cookie = 'XSRF-TOKEN=server-generated-token';
+    }
+
+    ngOnInit() {
+        this.loadExp();
+    }
+
+    // appel du service apidataservice pour utiliser axios
+    public async loadExp(): Promise<void> {
+        try {
+            this.expers = await this.apiClient.get<Expers[]>({
+                url: '../../assets/data/exper.json',
+            });
+        } catch (error) {
+            console.error(error);
+        }
+    }
 }
