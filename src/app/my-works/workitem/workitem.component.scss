@@ -5,15 +5,37 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
 
+
   .project {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom: $secondary-color 2px solid;
 
+    .work-info {
+      position: absolute;
+      top: 100px;
+      background: rgba(#fff, 0.7);
+      width: 100%;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: $secondary-color;
+      text-shadow: 2px 2px 1px #000;
+      padding: 1rem 0;
+      transform: scale3d(0, 0, 0);
+
+      &:hover {
+        transform: scale3d(1, 1, 1);
+        @include easeOut();
+      }
+    }
+
+
     .link-img {
-      position: relative;
+      // position: relative;
 
       .work-img {
         width: 100%;
@@ -27,27 +49,16 @@
           filter: none;
           -webkit-filter: none;
           @include easeOut();
-
         }
+
       }
 
-      &:hover {
-
-        &:after {
-          position: absolute;
-          font-family: 'Font Awesome 5 free';
-          content: "\f06e";
-          width: 100%;
-          top: 90px;
-          left: 0;
-          text-align: center;
-          font-size: 2rem;
-          z-index: 2;
-          color: $secondary-color;
-          text-shadow: 2px 2px 2px #000;
-          background: rgba(#fff, 0.7);
-        }
+      // agit sur le frere direct de link-img lors du hover de celui-ci
+      &:hover+.work-info {
+        transform: scale3d(1, 1, 1);
+        @include easeOut();
       }
+
     }
 
     .btn {

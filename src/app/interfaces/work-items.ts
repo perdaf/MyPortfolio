@@ -4,4 +4,5 @@ export interface WorkItems {
     categorie: string;
     url: string;
     gitUrl: string;
+    visuel: boolean;
 }

@@ -1,10 +1,14 @@
 <div class="work-item">
   <div class="project" *ngFor="let workItem of workItems">
-    <a href="!#" class="link-img">
+    <div class="link-img">
       <img class="work-img" src={{workItem.imgUrl}} alt={{workItem.name}}>
+    </div>
+    <a [href]="workItem.url" class="work-info" *ngIf="workItem.visuel">
+      <i class="fas fa-eye"></i>
+      {{workItem.name}}
     </a>
     <div class="btn btn-light">
-      {{workItem.name}}
+      Catégorie: {{workItem.categorie}}
     </div>
     <a href="!#" class="btn btn-dark" *ngIf="workItem.gitUrl">
       <i class="fab fa-github"> github</i>

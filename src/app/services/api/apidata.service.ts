@@ -1,6 +1,12 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {
+    HttpClient,
+    HttpResponse,
+    HttpErrorResponse,
+} from '@angular/common/http';
+
 import { catchError } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
 
 import { Menus } from '../../interfaces/menu';
 import { Expers } from '../../interfaces/expers';
@@ -10,23 +16,21 @@ import { WorkItems } from '../../interfaces/work-items';
     providedIn: 'root',
 })
 export class ApidataService {
-    // private axiosClient: AxiosInstance;
-
     constructor(private http: HttpClient) {}
 
-    public getMenu(): Observable<HttpResponse<Menus[]>> {
+    public getMenu() {
         return this.http
             .get<Menus[]>('../../assets/data/menu.json')
             .pipe(catchError(this.handleError));
     }
 
-    public getExpers(): Observable<HttpResponse<Expers[]>> {
+    public getExpers() {
         return this.http
             .get<Expers[]>('../../assets/data/exper.json')
             .pipe(catchError(this.handleError));
     }
 
-    public getWorks(): Observable<HttpResponse<WorkItems[]>> {
+    public getWorks() {
         return this.http
             .get<WorkItems[]>('../../assets/data/workitems.json')
             .pipe(catchError(this.handleError));

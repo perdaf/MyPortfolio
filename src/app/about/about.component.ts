@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApidataService } from '../services/api/apidata.service';
-import { Expers } from '../interface/expers';
+import { Expers } from '../interfaces/expers';
 
 @Component({
     selector: 'app-about',

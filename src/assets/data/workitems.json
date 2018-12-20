@@ -3,27 +3,31 @@
     "imgUrl": "../../assets/img/bottle juice.jpg",
     "categorie": "3d",
     "url": "www.work1.com",
-    "gitUrl": "gdfgd"
+    "gitUrl": "gdfgd",
+    "visuel": true
   },
   {
     "name": "coiffeuse project",
     "imgUrl": "../../assets/img/comp001.jpg",
     "categorie": "3d",
     "url": "www.work1.com",
-    "gitUrl": ""
+    "gitUrl": "",
+    "visuel": true
   },
   {
     "name": "Baya tropical",
     "imgUrl": "../../assets/img/design_baya_tropical.png",
     "categorie": "dev - web Design",
     "url": "www.work1.com",
-    "gitUrl": "www.git-work1.com"
+    "gitUrl": "www.git-work1.com",
+    "visuel": false
   },
   {
     "name": "don't Cross",
     "imgUrl": "../../assets/img/dont cross.jpg",
     "categorie": "2d - illustration",
     "url": "www.work1.com",
-    "gitUrl": ""
+    "gitUrl": "",
+    "visuel": false
   }
 ]
