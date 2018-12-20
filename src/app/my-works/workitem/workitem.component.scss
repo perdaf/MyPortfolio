@@ -26,6 +26,7 @@
       text-shadow: 2px 2px 1px #000;
       padding: 1rem 0;
       transform: scale3d(0, 0, 0);
+      cursor: pointer;
 
       &:hover {
         transform: scale3d(1, 1, 1);

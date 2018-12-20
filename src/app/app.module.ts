@@ -13,6 +13,7 @@ import { Page404Component } from './page404/page404.component';
 import { WorkitemComponent } from './my-works/workitem/workitem.component';
 
 import { ApidataService } from './services/api/apidata.service';
+import { ShowitemComponent } from './my-works/workitem/showitem/showitem.component';
 
 @NgModule({
     declarations: [
@@ -24,6 +25,7 @@ import { ApidataService } from './services/api/apidata.service';
         ContactComponent,
         Page404Component,
         WorkitemComponent,
+        ShowitemComponent,
     ],
     imports: [BrowserModule, HttpClientModule, AppRoutingModule],
     providers: [ApidataService],

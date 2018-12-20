@@ -1,0 +1,45 @@
+@import '../../../../assets/scss/config';
+
+
+#showitem {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 100vh;
+  width: 100%;
+  background: rgba($primary-color, 0.7);
+  @include easeOut();
+
+  .btnclose {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary-color;
+      @include easeOut();
+    }
+  }
+
+  .imgInfos {
+    display: block;
+    height: 90%;
+    width: 90%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.close {
+  transform: scale3d(0, 0, 0);
+  @include easeOut();
+}
