@@ -1,8 +1,8 @@
-$primary-color: #444;
+$primary-color: #333;
 $secondary-color : rgb(252, 166, 69);
 $show-home-image: true;
 $bg-image: url(./assets/img/bg-home.jpg);
-$bg-opacity: 0.9;
+$bg-opacity: 0.8;
 
 
 @mixin easeOut {
@@ -13,9 +13,20 @@ $bg-opacity: 0.9;
   @if $show-home-image {
     background:
       linear-gradient(rgba($primary-color, 0.8),
-      rgba($primary-color, 0.8)), $bg-image;
+      rgba($primary-color, $bg-opacity)), $bg-image;
     background-attachment: fixed;
     background-size: cover;
+  }
+}
+
+// set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  }
+
+  @else {
+    @return #fff;
   }
 }
 

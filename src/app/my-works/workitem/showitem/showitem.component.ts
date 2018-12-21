@@ -24,8 +24,8 @@ export class ShowitemComponent implements OnChanges {
         // Add '${implements OnChanges}' to the class.
         this.imgUrl = changes.imgInfos.currentValue.imgUrl;
         this.toggleShow = changes.imgInfos.currentValue.showImg;
-        console.log(`url: ${this.imgUrl}`);
-        console.log(`showImage: ${this.toggleShow}`);
+        // console.log(`url: ${this.imgUrl}`);
+        // console.log(`showImage: ${this.toggleShow}`);
     }
 
     toggleShowitem() {

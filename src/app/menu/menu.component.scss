@@ -4,6 +4,7 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+
 }
 
 .menu-btn {
@@ -23,7 +24,7 @@ header {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut();
   }
 
@@ -100,6 +101,7 @@ header {
         font-size: 2rem;
         text-transform: uppercase;
         width: 100%;
+        color: set-text-color($primary-color);
 
         &:hover {
           color: $secondary-color;

@@ -20,7 +20,7 @@ export class WorkitemComponent implements OnInit {
             imgUrl: '',
             showImg: true,
         };
-        console.log(this.imgInfos);
+        // console.log(this.imgInfos);
     }
 
     sendInfo($event) {
@@ -28,6 +28,6 @@ export class WorkitemComponent implements OnInit {
             imgUrl: $event,
             showImg: false,
         };
-        console.log(this.imgInfos);
+        // console.log(this.imgInfos);
     }
 }

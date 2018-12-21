@@ -9,9 +9,12 @@
       <i class="fas fa-eye"></i>
       {{workItem.name}}
     </div>
-    <div class="btn btn-light">
-      Catégorie: {{workItem.categorie}}
+    <div class="btn btn-cat">
+      {{workItem.categorie | uppercase}}
     </div>
+    <a [href]="workItem.url" class="btn btn-light" *ngIf="workItem.url" target="blank">
+      <i class="fas fa-eye"> site </i>
+    </a>
     <a href="!#" class="btn btn-dark" *ngIf="workItem.gitUrl">
       <i class="fab fa-github"> github</i>
     </a>
