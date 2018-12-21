@@ -57,14 +57,32 @@ a {
 }
 
 @include mediaSm {
+  main {
+    align-items: center;
+    text-align: center;
 
-  h1,
-  h2,
-  h3 {
-    &.lg-heading {
+    h1,
+    h2,
+    h3 {
+      &.lg-heading {
+        font-size: 2rem;
+        max-width: 80%;
+        line-height: 2rem;
+        margin: 25px auto;
+      }
+    }
+
+  }
+}
+
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
       font-size: 3rem;
-      max-width: 80%;
-      line-height: 2rem;
+      line-height: 1;
       margin-bottom: 1rem;
     }
   }
