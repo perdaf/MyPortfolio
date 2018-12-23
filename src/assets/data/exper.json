@@ -1,13 +1,31 @@
 [{
-    "workAt": "webForce3",
-    "resume": "Lorem ipsum dolor sit amet consectetur"
+    "workAt": "Certificat de competences chef de projet Intranet/internet",
+    "date": " *** 2003 ***",
+    "resume": "Délivrer par le CNAM de Bordeaux. Formation au métier de chef de projet, developpeur Java/c++ Bac+3 ou équivalent - Informatique - CNAM"
   },
   {
-    "workAt": "pileMedia",
-    "resume": "Lorem ipsum dolor sit amet consectetur"
+    "workAt": "Certification professionnelle développeur full-stack",
+    "date": "*** 2017 ***",
+    "resume": "Les formations WebForce3 ont été reconnues en novembre 2015 par la Commission Nationale de la Certification Professionnelle (CNCP). Bac+2 ou équivalent."
   },
   {
-    "workAt": "Entrepreneur",
-    "resume": "Lorem ipsum dolor sit amet consectetur"
+    "workAt": "Conseiller Clientèle chez Free",
+    "date": "*** 2005 - 2010 ***",
+    "resume": "Conseiller clientèle support technique aux particulier et professionnelle"
+  },
+  {
+    "workAt": "Infographiste 2D/3D chez Avantille",
+    "date": "*** 2011 - 2012 ***",
+    "resume": "Modélisation 3D de la ville de Fort de France. Modélisation 3D, amélioration et mise en place de textures via des photos références. maya, Blender, photoshop cc"
+  },
+  {
+    "workAt": "Infographiste chez Boutique kdo",
+    "date": "*** 2012 - 2015 ***",
+    "resume": "Accueil clientèle, réalisation d’objet personnaliser (tasses, t-shirt, poster, carte de visite, kakemono). Retouche photo, Photomontage, Mise en page. Photoshop cc, illustrator cc, inDesign cc"
+  },
+  {
+    "workAt": "Auto Entrepreneur",
+    "date": "*** 2015 ***",
+    "resume": "Réalisation de site internet, création graphique pour le print et le web. Symfony, php, html5, css3, javascript, jquery, Angular4, reactjs"
   }
 ]

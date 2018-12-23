@@ -12,6 +12,18 @@ export class AboutComponent implements OnInit {
 
     constructor(private apiClient: ApidataService) {}
 
+    public skills: object = [
+        { name: 'node.js', skill: 80 },
+        { name: 'javascript', skill: 88 },
+        { name: 'angular', skill: 79 },
+        { name: 'react', skill: 49 },
+        { name: 'php', skill: 85 },
+        { name: 'html', skill: 99 },
+        { name: 'css', skill: 99 },
+        { name: 'photoshop', skill: 99 },
+        { name: 'illustrator', skill: 75 },
+    ];
+
     ngOnInit() {
         this.loadExp();
     }

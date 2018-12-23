@@ -20,12 +20,8 @@ export class ShowitemComponent implements OnChanges {
     constructor() {}
 
     ngOnChanges(changes: SimpleChanges) {
-        // Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
-        // Add '${implements OnChanges}' to the class.
         this.imgUrl = changes.imgInfos.currentValue.imgUrl;
         this.toggleShow = changes.imgInfos.currentValue.showImg;
-        // console.log(`url: ${this.imgUrl}`);
-        // console.log(`showImage: ${this.toggleShow}`);
     }
 
     toggleShowitem() {

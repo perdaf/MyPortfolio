@@ -1,15 +1,18 @@
 @import '../../assets/scss/config';
 
 .content {
+  display: flex;
   padding-top: 1rem;
 }
 
 .bio {
 
   display: flex;
+  flex-flow: column wrap;
+  width: 40%;
 
   img {
-    display: block;
+    align-self: center;
     width: 170px;
     height: 170px;
     object-fit: cover;
@@ -18,54 +21,127 @@
   }
 
   .resume {
-    width: 70%;
-    padding: 0 20px 0;
-  }
-}
-
-.exper {
-  width: 100%;
-  margin: 20px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
-
-  &-item {
-    margin: 5px 5px 0;
-    flex: 1 1 30%;
-    height: auto;
-    min-height: 250px;
-    overflow: hidden;
-    background: rgba(lighten($primary-color, 5), 0.7);
-    border-bottom: 2px solid $secondary-color;
-  }
-
-  &-title {
-    background: #000;
+    margin: 20px 0 0 0;
     text-align: center;
-    font-weight: 700;
-    padding: 5px;
-  }
-
-  &-resume {
-    padding: 5px;
   }
 }
 
-@include mediaXl {
-  .exper-item {
-    flex: 1 1 20%;
+.skillBox {
+  width: 100%;
+  padding: 1rem;
+
+  .skill {
+    &-content {
+      position: relative;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      margin: 0 0 20px 0;
+    }
+
+    &-name {
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 30px;
+      padding: 0 5px;
+      z-index: 1;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    &-perc {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 5px 0 0;
+      z-index: 1;
+      line-height: 30px;
+    }
+
+    &-box {
+      height: 30px;
+      background: rgba($secondary-color, 0.4);
+      border-radius: 5px;
+    }
+
+    &-level {
+      position: absolute;
+      top: 3px;
+      left: 2px;
+      z-index: 0;
+      height: 25px;
+      background: $secondary-color;
+      width: 100%;
+      border-radius: 5px;
+    }
   }
+
 }
+
+// .exper {
+//   width: 100%;
+//   margin: 20px 0 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-flow: row wrap;
+
+//   &-item {
+//     margin: 5px 5px 0;
+//     flex: 1 1 30%;
+//     height: auto;
+//     min-height: 250px;
+//     overflow: hidden;
+//     background: rgba(lighten($primary-color, 5), 0.7);
+//     border-bottom: 2px solid $secondary-color;
+//   }
+
+//   &-title {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background: #000;
+//     text-align: center;
+//     font-weight: 700;
+//     padding: 5px;
+//     min-height: 80px;
+//   }
+
+//   &-resume {
+//     padding: 10px 20px;
+//   }
+
+//   &-date {
+//     text-align: center;
+//     margin: 0.3rem 0;
+//   }
+// }
+
+// @include mediaXl {
+//   .exper-item {
+//     flex: 1 1 20%;
+//   }
+// }
 
 @include mediaMd {
-  .exper-item {
-    flex: 1 1 45%;
+  .content {
+    flex-flow: column wrap;
+    padding-top: 1rem;
+    align-items: center;
+
+    .bio {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
   }
+
+  // .exper-item {
+  //   flex: 1 1 45%;
+  // }
 }
 
 @include mediaSm {
+
   .bio {
     flex-flow: column wrap;
     align-items: center;
@@ -77,7 +153,7 @@
     }
   }
 
-  .exper-item {
-    flex: 1 1 100%;
-  }
+  // .exper-item {
+  //   flex: 1 1 100%;
+  // }
 }

@@ -1,7 +1,7 @@
-<div class="content">
-  <h1 class="lg-heading">A mon<span class="text-secondary"> Propos</span></h1>
-  <h2 class="sm-heading">Parlons un peu de moi...</h2>
+<h1 class="lg-heading">A mon<span class="text-secondary"> Propos</span></h1>
+<h2 class="sm-heading">Parlons un peu de moi...</h2>
 
+<div class="content">
   <div class="bio">
     <img src="../../assets/img/IMG_20181018_162614.jpg" alt="moi">
     <div class="resume">
@@ -10,11 +10,23 @@
       nulla itaque corporis maxime architecto?
     </div>
   </div>
-  <h2 class="sm-heading">Quelques expériences professionnelles</h2>
-  <div class="exper">
-    <div class="exper-item" *ngFor="let exp of expers">
-      <div class="exper-title">{{exp.workAt}}</div>
-      <div class="exper-resume">{{exp.resume}}</div>
+  <div class="skillBox">
+    <div class="skill-content" *ngFor="let skill of skills">
+      <h3 class="skill-name">{{skill.name}}</h3>
+      <h3 class="skill-perc">{{skill.skill}}%</h3>
+      <div class="skill-box">
+        <div class="skill-level" [style.width.%]="skill.skill"></div>
+      </div>
     </div>
   </div>
 </div>
+<!--
+<h2 class="sm-heading">Quelques étapes de mon parcour</h2>
+<div class="exper">
+  <div class="exper-item" *ngFor="let exp of expers">
+    <div class="exper-title">{{exp.workAt}}</div>
+    <div class="exper-date">{{exp.date}}</div>
+    <div class="exper-resume">{{exp.resume}}</div>
+  </div>
+</div>
+-->

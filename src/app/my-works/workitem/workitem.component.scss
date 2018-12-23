@@ -1,17 +1,36 @@
 @import '../../../assets/scss/config';
 
 .work-item {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.5rem;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-gap: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 
   .project {
     display: flex;
+    flex: 1 1 25%;
+    margin: 1rem 1rem;
     position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 300px;
+    min-width: 250px;
     border-bottom: $secondary-color 2px solid;
+    transform: scale3d(0, 0, 0);
+    @include easeOut();
+
+    &.show {
+      transform: scale3d(1, 1, 1);
+      @include easeOut();
+    }
+
+    &:hover {
+      border: 2px solid #fff;
+      box-shadow: 2px 2px 5px rgba(#000, 0.6);
+    }
 
     .work-info {
       position: absolute;
@@ -106,20 +125,28 @@
   }
 }
 
-@include mediaXl {
-  .work-item {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+// @include mediaXl {
+//   .work-item {
+//     grid-template-columns: repeat(4, 1fr);
+//   }
+// }
 
 @include mediaMd {
-  .work-item {
-    grid-template-columns: repeat(2, 1fr);
+
+  // .work-item {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+  .project {
+    flex: 1 1 50%;
   }
 }
 
 @include mediaSm {
-  .work-item {
-    grid-template-columns: 1fr;
+
+  // .work-item {
+  //   grid-template-columns: 1fr;
+  // }
+  .project {
+    flex: 1 1 100%;
   }
 }

@@ -2,4 +2,43 @@
 
 .content {
   padding-top: 1rem;
+
+  .monmail {
+    margin: 25vh 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mail {
+      border: 2px solid $secondary-color;
+      padding: 10px;
+      background: rgba($primary-color, 0.5);
+      font-size: 4rem;
+
+      .myname {
+        font-weight: 600;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+@include mediaMd {
+  .content {
+    .monmail {
+      .mail {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@include mediaSm {
+  .content {
+    .monmail {
+      .mail {
+        font-size: 2rem;
+      }
+    }
+  }
 }

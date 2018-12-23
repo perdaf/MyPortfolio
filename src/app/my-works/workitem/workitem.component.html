@@ -1,7 +1,7 @@
 <app-showitem [imgInfos]="imgInfos"></app-showitem>
 
 <div class="work-item">
-  <div class="project" *ngFor="let workItem of workItems">
+  <div class="project" *ngFor="let workItem of workItems" [class.show]="show">
     <div class="link-img">
       <img class="work-img" src={{workItem.imgUrl}} alt={{workItem.name}}>
     </div>

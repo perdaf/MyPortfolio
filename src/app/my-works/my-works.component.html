@@ -3,6 +3,12 @@
   <h2 class="sm-heading">Quelques exemples de projets...</h2>
 
   <div class="content">
+    <div class="classification">
+      <p class="classification-item" [class.active]="selAll" (click)="selectCat('all')">All</p>
+      <p class="classification-item" [class.active]="selDevDesign" (click)="selectCat('dev - web design')">dev/web-design</p>
+      <p class="classification-item" [class.active]="sel2d" (click)="selectCat('2d')">2d</p>
+      <p class="classification-item" [class.active]="sel3d" (click)="selectCat('3d')">3d</p>
+    </div>
     <app-workitem [workItems]="workItems"></app-workitem>
   </div>
 </div>

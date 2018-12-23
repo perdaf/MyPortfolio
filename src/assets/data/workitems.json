@@ -1,7 +1,7 @@
 [{
     "name": "My Portfolio",
     "imgUrl": "../../assets/img/myportfolio.jpg",
-    "categorie": "dev - web design ",
+    "categorie": "dev - web design",
     "url": "",
     "gitUrl": "!#",
     "visuel": false
@@ -17,7 +17,7 @@
   {
     "name": "Mon Pomodoro",
     "imgUrl": "../../assets/img/pomodoro.jpg",
-    "categorie": "dev",
+    "categorie": "dev - web design",
     "url": "",
     "gitUrl": "!#",
     "visuel": true
@@ -33,7 +33,7 @@
   {
     "name": "Baya tropical",
     "imgUrl": "../../assets/img/Baya tropical.jpg",
-    "categorie": "dev - web Design",
+    "categorie": "dev - web design",
     "url": "",
     "gitUrl": "",
     "visuel": true
@@ -49,7 +49,7 @@
   {
     "name": "Mon ancien site",
     "imgUrl": "../../assets/img/cv.jpg",
-    "categorie": "dev",
+    "categorie": "dev - web design",
     "url": "",
     "gitUrl": "!#",
     "visuel": true
@@ -57,7 +57,7 @@
   {
     "name": "Home Secour site",
     "imgUrl": "../../assets/img/home-secour.jpg",
-    "categorie": "dev - Web design",
+    "categorie": "dev - web design",
     "url": "https://www.home-secours.fr/",
     "gitUrl": "",
     "visuel": false
@@ -89,7 +89,7 @@
   {
     "name": "Maison de la serrure",
     "imgUrl": "../../assets/img/maisondelaserrure.jpg",
-    "categorie": "dev - Web design",
+    "categorie": "dev - web design",
     "url": "https://www.maisondelaserrure.com/",
     "gitUrl": "",
     "visuel": false
@@ -113,7 +113,7 @@
   {
     "name": "Site T-shirt personnalisés",
     "imgUrl": "../../assets/img/projetxs.jpg",
-    "categorie": "dev - Web design",
+    "categorie": "dev - web design",
     "url": "",
     "gitUrl": "!#",
     "visuel": true
