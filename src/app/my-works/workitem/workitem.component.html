@@ -15,7 +15,7 @@
     <a [href]="workItem.url" class="btn btn-light" *ngIf="workItem.url" target="blank">
       <i class="fas fa-eye"> site </i>
     </a>
-    <a href="!#" class="btn btn-dark" *ngIf="workItem.gitUrl">
+    <a [href]="workItem.gitUrl" target="blank" class="btn btn-dark" *ngIf="workItem.gitUrl">
       <i class="fab fa-github"> github</i>
     </a>
   </div>

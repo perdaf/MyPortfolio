@@ -3,7 +3,7 @@
     "imgUrl": "../../assets/img/myportfolio.jpg",
     "categorie": "dev - web design",
     "url": "",
-    "gitUrl": "!#",
+    "gitUrl": "https://github.com/perdaf/MyPortfolio",
     "visuel": false
   },
   {
@@ -19,7 +19,7 @@
     "imgUrl": "../../assets/img/pomodoro.jpg",
     "categorie": "dev - web design",
     "url": "",
-    "gitUrl": "!#",
+    "gitUrl": "https://github.com/perdaf/Mypomodoro",
     "visuel": true
   },
   {
@@ -51,7 +51,7 @@
     "imgUrl": "../../assets/img/cv.jpg",
     "categorie": "dev - web design",
     "url": "",
-    "gitUrl": "!#",
+    "gitUrl": "https://github.com/perdaf/site-perso-silex",
     "visuel": true
   },
   {
