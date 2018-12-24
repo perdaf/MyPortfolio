@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApidataService } from '../services/api/apidata.service';
-import { Expers } from '../interfaces/expers';
+// import { Expers } from '../interfaces/expers';
 
 @Component({
     selector: 'app-about',
@@ -8,7 +8,7 @@ import { Expers } from '../interfaces/expers';
     styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
-    public expers: Expers[];
+    // public expers: Expers[];
 
     constructor(private apiClient: ApidataService) {}
 
@@ -25,16 +25,16 @@ export class AboutComponent implements OnInit {
     ];
 
     ngOnInit() {
-        this.loadExp();
+        // this.loadExp();
     }
 
     // appel du service apidataservice
-    public async loadExp() {
-        this.apiClient
-            .getExpers()
-            .subscribe(
-                (data: Expers[]) => (this.expers = data),
-                error => console.error(error)
-            );
-    }
+    // public async loadExp() {
+    //     this.apiClient
+    //         .getExpers()
+    //         .subscribe(
+    //             (data: Expers[]) => (this.expers = data),
+    //             error => console.error(error)
+    //         );
+    // }
 }

@@ -3,7 +3,7 @@
 <div class="work-item">
   <div class="project" *ngFor="let workItem of workItems" [class.show]="show">
     <div class="link-img">
-      <img class="work-img" src={{workItem.imgUrl}} alt={{workItem.name}}>
+      <img class="work-img" [src]="workItem.imgUrl" alt={{workItem.name}}>
     </div>
     <div class="work-info" *ngIf="workItem.visuel" (click)="sendInfo(workItem.imgUrl)">
       <i class="fas fa-eye"></i>

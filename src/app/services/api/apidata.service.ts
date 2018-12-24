@@ -20,19 +20,19 @@ export class ApidataService {
 
     public getMenu() {
         return this.http
-            .get<Menus[]>('../../assets/data/menu.json')
+            .get<Menus[]>('assets/data/menu.json')
             .pipe(catchError(this.handleError));
     }
 
-    public getExpers() {
-        return this.http
-            .get<Expers[]>('../../assets/data/exper.json')
-            .pipe(catchError(this.handleError));
-    }
+    // public getExpers() {
+    //     return this.http
+    //         .get<Expers[]>('./assets/data/exper.json')
+    //         .pipe(catchError(this.handleError));
+    // }
 
     public getWorks() {
         return this.http
-            .get<WorkItems[]>('../../assets/data/workitems.json')
+            .get<WorkItems[]>('assets/data/workitems.json')
             .pipe(catchError(this.handleError));
     }
 

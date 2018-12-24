@@ -1,6 +1,6 @@
 [{
     "name": "My Portfolio",
-    "imgUrl": "../../assets/img/myportfolio.jpg",
+    "imgUrl": "assets/img/myportfolio.jpg",
     "categorie": "dev - web design",
     "url": "",
     "gitUrl": "https://github.com/perdaf/MyPortfolio",
@@ -8,7 +8,7 @@
   },
   {
     "name": "Bottle juice",
-    "imgUrl": "../../assets/img/bottle juice.jpg",
+    "imgUrl": "assets/img/bottle juice.jpg",
     "categorie": "3d",
     "url": "",
     "gitUrl": "",
@@ -16,7 +16,7 @@
   },
   {
     "name": "Mon Pomodoro",
-    "imgUrl": "../../assets/img/pomodoro.jpg",
+    "imgUrl": "assets/img/pomodoro.jpg",
     "categorie": "dev - web design",
     "url": "",
     "gitUrl": "https://github.com/perdaf/Mypomodoro",
@@ -24,7 +24,7 @@
   },
   {
     "name": "coiffeuse project",
-    "imgUrl": "../../assets/img/Coiffeuse.jpg",
+    "imgUrl": "assets/img/Coiffeuse.jpg",
     "categorie": "3d",
     "url": "",
     "gitUrl": "",
@@ -32,7 +32,7 @@
   },
   {
     "name": "Baya tropical",
-    "imgUrl": "../../assets/img/Baya tropical.jpg",
+    "imgUrl": "assets/img/Baya tropical.jpg",
     "categorie": "dev - web design",
     "url": "",
     "gitUrl": "",
@@ -40,7 +40,7 @@
   },
   {
     "name": "don't Cross",
-    "imgUrl": "../../assets/img/Don't Cross.jpg",
+    "imgUrl": "assets/img/Don't Cross.jpg",
     "categorie": "2d - illustration",
     "url": "",
     "gitUrl": "",
@@ -48,7 +48,7 @@
   },
   {
     "name": "Mon ancien site",
-    "imgUrl": "../../assets/img/cv.jpg",
+    "imgUrl": "assets/img/cv.jpg",
     "categorie": "dev - web design",
     "url": "",
     "gitUrl": "https://github.com/perdaf/site-perso-silex",
@@ -56,7 +56,7 @@
   },
   {
     "name": "Home Secour site",
-    "imgUrl": "../../assets/img/home-secour.jpg",
+    "imgUrl": "assets/img/home-secour.jpg",
     "categorie": "dev - web design",
     "url": "https://www.home-secours.fr/",
     "gitUrl": "",
@@ -64,7 +64,7 @@
   },
   {
     "name": "Rhum island",
-    "imgUrl": "../../assets/img/ile-aux-rhum.jpg",
+    "imgUrl": "assets/img/ile-aux-rhum.jpg",
     "categorie": "3d",
     "url": "",
     "gitUrl": "",
@@ -72,7 +72,7 @@
   },
   {
     "name": "Logo Crépe",
-    "imgUrl": "../../assets/img/logo-1.jpg",
+    "imgUrl": "assets/img/logo-1.jpg",
     "categorie": "3d",
     "url": "",
     "gitUrl": "",
@@ -80,7 +80,7 @@
   },
   {
     "name": "Logo design Raider",
-    "imgUrl": "../../assets/img/logo-2.jpg",
+    "imgUrl": "assets/img/logo-2.jpg",
     "categorie": "3d",
     "url": "",
     "gitUrl": "",
@@ -88,7 +88,7 @@
   },
   {
     "name": "Maison de la serrure",
-    "imgUrl": "../../assets/img/maisondelaserrure.jpg",
+    "imgUrl": "assets/img/maisondelaserrure.jpg",
     "categorie": "dev - web design",
     "url": "https://www.maisondelaserrure.com/",
     "gitUrl": "",
@@ -96,7 +96,7 @@
   },
   {
     "name": "Monster Drink",
-    "imgUrl": "../../assets/img/canette.jpg",
+    "imgUrl": "assets/img/canette.jpg",
     "categorie": "3d",
     "url": "",
     "gitUrl": "",
@@ -104,7 +104,7 @@
   },
   {
     "name": "Monster",
-    "imgUrl": "../../assets/img/monstre.jpg",
+    "imgUrl": "assets/img/monstre.jpg",
     "categorie": "2d",
     "url": "",
     "gitUrl": "",
@@ -112,7 +112,7 @@
   },
   {
     "name": "Site T-shirt personnalisés",
-    "imgUrl": "../../assets/img/projetxs.jpg",
+    "imgUrl": "assets/img/projetxs.jpg",
     "categorie": "dev - web design",
     "url": "",
     "gitUrl": "!#",
@@ -120,7 +120,7 @@
   },
   {
     "name": "Tasses thé",
-    "imgUrl": "../../assets/img/tasse the.jpg",
+    "imgUrl": "assets/img/tasse the.jpg",
     "categorie": "3d",
     "url": "",
     "gitUrl": "",
