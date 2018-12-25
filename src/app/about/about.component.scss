@@ -36,6 +36,12 @@
       border-radius: 5px;
       border: 1px solid #fff;
       margin: 0 0 20px 0;
+      transform: translate3d(0, 800px, 0);
+
+      &.showSkill {
+        transform: translate3d(0, 0, 0);
+        @include easeOut();
+      }
     }
 
     &-name {

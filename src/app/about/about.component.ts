@@ -12,6 +12,8 @@ export class AboutComponent implements OnInit {
 
     constructor(private apiClient: ApidataService) {}
 
+    public showSkill = false;
+
     public skills: object = [
         { name: 'node.js', skill: 80 },
         { name: 'javascript', skill: 88 },
@@ -25,6 +27,7 @@ export class AboutComponent implements OnInit {
     ];
 
     ngOnInit() {
+        setTimeout(() => (this.showSkill = true), 1000);
         // this.loadExp();
     }
 

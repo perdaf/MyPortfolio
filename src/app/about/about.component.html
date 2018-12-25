@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="skillBox">
-    <div class="skill-content" *ngFor="let skill of skills">
+    <div class="skill-content" *ngFor="let skill of skills" [class.showSkill]="showSkill">
       <h3 class="skill-name">{{skill.name}}</h3>
       <h3 class="skill-perc">{{skill.skill}}%</h3>
       <div class="skill-box">
