@@ -27,7 +27,7 @@ export class AboutComponent implements OnInit {
     ];
 
     ngOnInit() {
-        setTimeout(() => (this.showSkill = true), 1000);
+        setTimeout(() => (this.showSkill = true), 200);
         // this.loadExp();
     }
 
