@@ -17,11 +17,11 @@ export class WorkitemComponent implements OnChanges {
     constructor() {}
 
     ngOnChanges(change: SimpleChanges) {
-        this.show = false;
-        this.imgInfos = {
-            imgUrl: '',
-            showImg: true,
-        };
+        // this.show = false;
+        // this.imgInfos = {
+        //     imgUrl: '',
+        //     showImg: true,
+        // };
         setTimeout(() => (this.show = true), 200);
     }
 
