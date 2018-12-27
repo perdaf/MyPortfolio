@@ -1,0 +1,129 @@
+[{
+    "name": "My Portfolio",
+    "imgUrl": "assets/img/myportfolio.jpg",
+    "categorie": "dev - web design",
+    "url": "",
+    "gitUrl": "https://github.com/perdaf/MyPortfolio",
+    "visuel": false
+  },
+  {
+    "name": "Bottle juice",
+    "imgUrl": "assets/img/bottle juice.jpg",
+    "categorie": "3d",
+    "url": "",
+    "gitUrl": "",
+    "visuel": true
+  },
+  {
+    "name": "Mon Pomodoro",
+    "imgUrl": "assets/img/pomodoro.jpg",
+    "categorie": "dev - web design",
+    "url": "",
+    "gitUrl": "https://github.com/perdaf/Mypomodoro",
+    "visuel": true
+  },
+  {
+    "name": "coiffeuse project",
+    "imgUrl": "assets/img/Coiffeuse.jpg",
+    "categorie": "3d",
+    "url": "",
+    "gitUrl": "",
+    "visuel": true
+  },
+  {
+    "name": "Baya tropical",
+    "imgUrl": "assets/img/Baya tropical.jpg",
+    "categorie": "dev - web design",
+    "url": "",
+    "gitUrl": "",
+    "visuel": true
+  },
+  {
+    "name": "don't Cross",
+    "imgUrl": "assets/img/Don't Cross.jpg",
+    "categorie": "2d",
+    "url": "",
+    "gitUrl": "",
+    "visuel": true
+  },
+  {
+    "name": "Mon ancien site",
+    "imgUrl": "assets/img/cv.jpg",
+    "categorie": "dev - web design",
+    "url": "",
+    "gitUrl": "https://github.com/perdaf/site-perso-silex",
+    "visuel": true
+  },
+  {
+    "name": "Home Secour site",
+    "imgUrl": "assets/img/home-secour.jpg",
+    "categorie": "dev - web design",
+    "url": "https://www.home-secours.fr/",
+    "gitUrl": "",
+    "visuel": false
+  },
+  {
+    "name": "Rhum island",
+    "imgUrl": "assets/img/ile-aux-rhum.jpg",
+    "categorie": "3d",
+    "url": "",
+    "gitUrl": "",
+    "visuel": true
+  },
+  {
+    "name": "Logo Crépe",
+    "imgUrl": "assets/img/logo-1.jpg",
+    "categorie": "3d",
+    "url": "",
+    "gitUrl": "",
+    "visuel": true
+  },
+  {
+    "name": "Logo design Raider",
+    "imgUrl": "assets/img/logo-2.jpg",
+    "categorie": "3d",
+    "url": "",
+    "gitUrl": "",
+    "visuel": true
+  },
+  {
+    "name": "Maison de la serrure",
+    "imgUrl": "assets/img/maisondelaserrure.jpg",
+    "categorie": "dev - web design",
+    "url": "https://www.maisondelaserrure.com/",
+    "gitUrl": "",
+    "visuel": false
+  },
+  {
+    "name": "Monster Drink",
+    "imgUrl": "assets/img/canette.jpg",
+    "categorie": "3d",
+    "url": "",
+    "gitUrl": "",
+    "visuel": true
+  },
+  {
+    "name": "Monster",
+    "imgUrl": "assets/img/monstre.jpg",
+    "categorie": "2d",
+    "url": "",
+    "gitUrl": "",
+    "visuel": true
+  },
+  {
+    "name": "Site T-shirt personnalisés",
+    "imgUrl": "assets/img/projetxs.jpg",
+    "categorie": "dev - web design",
+    "url": "",
+    "gitUrl": "!#",
+    "visuel": true
+  },
+  {
+    "name": "Tasses thé",
+    "imgUrl": "assets/img/tasse the.jpg",
+    "categorie": "3d",
+    "url": "",
+    "gitUrl": "",
+    "visuel": true
+  }
+]
