@@ -12,6 +12,8 @@ header {
   z-index: 3;
   right: 35px;
   top: 35px;
+  animation: focusOnMe 1s 4;
+  // animation-duration: 2s;
   cursor: pointer;
   @include easeOut();
 
@@ -48,6 +50,20 @@ header {
         transform: rotate(-45deg) translate(6px, -5px);
       }
     }
+  }
+}
+
+@keyframes focusOnMe {
+  0% {
+    transform: scale3d(1, 1, 1)
+  }
+
+  50% {
+    transform: scale3d(1.5, 1.5, 1.5)
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1)
   }
 }
 

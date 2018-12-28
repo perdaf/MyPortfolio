@@ -17,7 +17,7 @@ export class WorkitemComponent implements OnChanges {
     constructor() {}
 
     ngOnChanges(change: SimpleChanges) {
-        // this.show = false;
+        this.show = false;
         // this.imgInfos = {
         //     imgUrl: '',
         //     showImg: true,
