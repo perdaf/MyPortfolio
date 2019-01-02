@@ -5,7 +5,7 @@
     <div class="link-img">
       <img class="work-img" [src]="workItem.imgUrl" alt={{workItem.name}}>
     </div>
-    <div class="work-info" *ngIf="workItem.visuel" (click)="sendInfo(workItem.imgUrl)">
+    <div class="work-info" *ngIf="workItem.visuel" (click)="sendInfo(workItem.imgUrl, workItem.desc)">
       <i class="fas fa-eye"></i>
       {{workItem.name}}
     </div>
