@@ -1,5 +1,14 @@
 [
   {
+    "name": "TimeTask",
+    "imgUrl": "assets/img/TimeTask.jpg",
+    "categorie": "dev - web design",
+    "desc": "debut d'une app de gestion de projets et tache, devellopper avec Reactjs et Firebase",
+    "url": "https://tasktimer-4b80b.firebaseapp.com/",
+    "gitUrl": "https://github.com/perdaf/timetasks",
+    "visuel": true
+  },
+  {
     "name": "My Portfolio",
     "imgUrl": "assets/img/myportfolio.jpg",
     "categorie": "dev - web design",
