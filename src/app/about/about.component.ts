@@ -10,7 +10,7 @@ import { ApidataService } from '../services/api/apidata.service';
 export class AboutComponent implements OnInit {
     // public expers: Expers[];
 
-    constructor(private apiClient: ApidataService) {}
+    constructor(private apiClient: ApidataService) { }
 
     public showSkill = false;
 
@@ -23,7 +23,7 @@ export class AboutComponent implements OnInit {
         { name: 'html', skill: 99 },
         { name: 'css', skill: 99 },
         { name: 'photoshop', skill: 99 },
-        { name: 'illustrator', skill: 75 },
+        { name: 'illustrator', skill: 85 },
     ];
 
     ngOnInit() {
